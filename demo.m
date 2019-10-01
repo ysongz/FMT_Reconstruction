@@ -1,6 +1,8 @@
 clc
 clear 
-load('cube_phantom_system_Matrix.mat'); % load stored Green's function
+load('cube_phantom_system_Matrix_part1.mat'); % load stored Green's function
+load('cube_phantom_system_Matrix_part2.mat');
+Gorg=[Gorg1,Gorg2];
 [row,column]=size(Gorg);
 % create cube phantom
 r=1.5;
