@@ -1,14 +1,14 @@
 # FMT_Reconstruction
 This code performs a sparsity-initialized MLEM algorithm described in __[1]__ for reconstruction of fluorescence molecular tomography.  
-To run this code, use the following command:
-__FMTrecon(detector,Gorg,truncnum,lambda,tol,niter)__,  
+To run this algorithm, use the following command:
+___FMTrecon(detector,Gorg,truncnum,lambda,tol,niter)___,  
 where   
-“detector” is a column vector representing detector measurements,  
-“Gorg” is system matrix that stores Green’s function,  
-“truncnum” is truncation number used in truncated singular value decomposition for preconditioning,  
-“lambda” is regularization strength for sparse recovery,  
-“tol” is tolerance used as stopping criteria in sparse recovery,  
-“niter” is the number of iteration in MLEM algorithm.  
+* “__detector__” is a column vector representing detector measurements,  
+* “__Gorg__” is system matrix that stores Green’s function,  
+* “__truncnum__” is truncation number used in truncated singular value decomposition for preconditioning,  
+* “__lambda__” is regularization strength for sparse recovery,  
+* “__tol__” is tolerance used as stopping criteria in sparse recovery,  
+* “__niter__” is the number of iteration in MLEM algorithm.  
 
 demo.m provides an example of running this algorithm on a digital cube phantom.
 
