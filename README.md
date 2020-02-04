@@ -4,9 +4,9 @@ To run this algorithm, use the following command:
 ___FMTrecon(detector,Gorg,truncnum,lambda,tol,niter)___,  
 where   
 * “__detector__” is a column vector representing detector measurements,  
-* “__Gorg__” is system matrix that stores Green’s function,  
-* “__truncnum__” is truncation number used in truncated singular value decomposition for preconditioning,  
-* “__lambda__” is regularization strength for sparse recovery,  
+* “__Gorg__” is is sensitivity matrix. Each column in “Gorg” represents response to a point fluorescence source in object space with all possible combination of detector and illumination source.
+* “__truncnum__” refers to the number of largest singular values kept in SVD. This parameter balances noise and stability of sparse recovery algorithm.
+* “__lambda__” represents regularization strength for sparse recovery. This parameter influences level of sparsity in sparse recovery algorithm.
 * “__tol__” is tolerance used as stopping criteria in sparse recovery,  
 * “__niter__” is the number of iteration in MLEM algorithm.  
 
